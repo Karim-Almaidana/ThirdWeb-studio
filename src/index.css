@@ -61,6 +61,7 @@ body {
   color: white;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  width: 100%;
 }
 .c-space {
   @apply sm:px-10 px-5 lg:px-15;

@@ -10,13 +10,11 @@ const About2 = () => {
     const el = sectionRef.current;
     if (!el) return;
 
-    // استهداف جميع المسارات داخل الـ SVGs
     const paths = el.querySelectorAll("svg path");
 
     paths.forEach((path) => {
       const length = path.getTotalLength();
       path.style.setProperty("--len", length);
-      // ضبط الـ dasharray والـ offset بناءً على طول المسار
       path.style.strokeDasharray = length;
       path.style.strokeDashoffset = length;
     });
@@ -78,7 +76,7 @@ const About2 = () => {
         viewBox="0 0 287 287"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="w-30 absolute bottom-0 right-10 lg:w-45 lg:right-5 lg:-bottom-4 md:w-40 svg-item"
+        className="w-30 absolute bottom-0 right-10 lg:w-45 lg:right-5 lg:-bottom-4 md:w-40 svg-item delay-200"
       >
         <g clipPath="url(#clip0_27_6130)">
           <path
@@ -113,7 +111,7 @@ const About2 = () => {
       <img
         src="assets/about1.jpg"
         alt=""
-        className="absolute w-3/15 right-25 top-30 sm:w-2/13 sm:top-31 md:w-3/23 md:hidden"
+        className="absolute w-4/15 right-25 top-30 sm:w-2/13 sm:top-31 md:w-3/23 md:hidden"
         data-aos="fade-zoom-in"
         data-aos-offset="150"
         data-aos-easing="ease-in-back"
@@ -122,7 +120,7 @@ const About2 = () => {
       <img
         src="assets/about2.jpg"
         alt=""
-        className="absolute w-40 bottom-20 left-0 md:w-45 md:left-60 md:bottom-10 lg:left-[27%] lg:w-50 lg:bottom-10"
+        className="absolute w-50 bottom-20 left-0 md:w-45 md:left-60 md:bottom-10 lg:left-[27%] lg:w-50 lg:bottom-10"
         data-aos="fade-zoom-in"
         data-aos-offset="10"
         data-aos-easing="ease-in-back"
@@ -131,7 +129,7 @@ const About2 = () => {
       <img
         src="assets/about3.jpg"
         alt=""
-        className="absolute w-3/17 bottom-25 right-23 sm:w-2/13 md:w-3/20 md:bottom-20 md:right-25 sm:bottom-25 sm:right-20 lg:bottom-15 lg:w-2/17"
+        className="absolute w-4/17 bottom-25 right-23 sm:w-2/13 md:w-3/20 md:bottom-20 md:right-25 sm:bottom-25 sm:right-20 lg:bottom-15 lg:w-2/17"
         data-aos="fade-zoom-in"
         data-aos-offset="10"
         data-aos-easing="ease-in-back"

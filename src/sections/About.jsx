@@ -55,10 +55,10 @@ const About = () => {
             stroke-linecap="square"
           />
         </svg>
-        <p className="absolute w-30 md:right-10 md:text-lg right-15 font-extralight md:font-light sm:text-lg sm:right-18 lg:right-19">
+        <p className="absolute text-xs w-20 md:right-10 md:text-lg right-10 font-extralight md:font-light sm:text-lg sm:right-18 lg:right-19">
           High-quality design craft
         </p>
-        <p className="absolute md:text-base w-39 left-15 lg:left-19 md:left-10 font-extralight sm:text-lg sm:left-18 lg:left-23">
+        <p className="absolute text-xs md:text-base w-29 left-12 lg:left-19 md:left-10 font-extralight sm:text-lg sm:left-18 lg:left-23">
           Passion in the new wave of crypto
         </p>
       </div>

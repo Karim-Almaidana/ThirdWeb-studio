@@ -1,31 +1,31 @@
 import { motion } from "motion/react";
 import { useState } from "react";
 
-function Navigation() {
+function Navigation({ closeMenu }) {
   return (
     <ul className="nav-ul">
       <li className="nav-li">
-        <a href="#" className="nav-link">
+        <a href="#" className="nav-link" onClick={closeMenu}>
           Home
         </a>
       </li>
       <li className="nav-li">
-        <a href="#about" className="nav-link">
+        <a href="#about" className="nav-link" onClick={closeMenu}>
           About
         </a>
       </li>
       <li className="nav-li">
-        <a href="#career" className="nav-link">
+        <a href="#career" className="nav-link" onClick={closeMenu}>
           Career
         </a>
       </li>
       <li className="nav-li">
-        <a href="#contact" className="nav-link">
+        <a href="#contact" className="nav-link" onClick={closeMenu}>
           Contact
         </a>
       </li>
       <li className="nav-li sm:hidden">
-        <a href="#" className="nav-link">
+        <a href="#" className="nav-link" onClick={closeMenu}>
           SignUp
         </a>
       </li>
@@ -36,8 +36,8 @@ function Navigation() {
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="fixed inset-x-0 z-20 w-full backdrop-blur-lg bg-black/40 sm:py-2">
-      <div className="mx-auto sm:px-10 px-5 lg:px-1 max-w-7xl w-full">
+    <div className="fixed inset-x-0 z-20 w-[70%] backdrop-blur-lg bg-black/40 sm:py-2 sm:w-full">
+      <div className="mx-auto c-space max-w-7xl">
         <div className="flex items-center justify-between py-2 sm:py-0">
           <a
             className="text-xl font-bold transition-colors text-neutral-400 hover:text-white"
@@ -116,7 +116,7 @@ const Navbar = () => {
             transition={{ duration: 1 }}
           >
             <nav className="pb-5">
-              <Navigation />
+              <Navigation closeMenu={() => setIsOpen(false)} />
             </nav>
           </motion.div>
         )}

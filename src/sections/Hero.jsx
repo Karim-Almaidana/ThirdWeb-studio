@@ -9,7 +9,7 @@ const Hero = () => {
       id="home"
     >
       <motion.div
-        className="absolute w-130 h-150 lg:w-250 lg:h-150 -z-50 -top-35 right-9 lg:top-5 lg:-right-33 -rotate-20 lg:-rotate-0 md:right-40"
+        className="absolute w-120 h-150 lg:w-250 lg:h-150 -z-50 -top-35 right-0 lg:top-5 lg:-right-33 -rotate-20 lg:-rotate-0 md:right-40"
         style={{
           backgroundImage: `url(${hero})`,
           backgroundPosition: "bottom",
@@ -21,7 +21,7 @@ const Hero = () => {
         transition={{ delay: 1.1, duration: 1.4 }}
       />
       <motion.h1
-        className="absolute md:text-7xl lg:text-8xl text-end top-[350px] text-6xl font-bold lg:top-35 lg:left-10 md:-bottom-40 md:left-22 md:text-6xl"
+        className="absolute md:text-7xl lg:text-8xl text-end top-[390px] text-5xl font-bold lg:top-35 lg:left-10 md:-bottom-40 md:left-22 md:text-6xl"
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1.5 }}
